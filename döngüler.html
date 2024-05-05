@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+
+        // for(baslangıç değeri;döngünün devam etme koşulu; döngünün devam etme şekli)
+        // {
+        //     döngü çalıştığı sürece çalışacak kod 
+        // }
+        // for(let i=0;i<10;i++)
+        // {
+        //     console.log(i)
+        // }
+
+
+        // while(döngünün çalışma koşulu0)
+        // {
+        //     döngü çalıştığı sürece çalışacal kod
+        // }
+        // let i=0
+        // while(i<10){
+        //     console.log(i)
+        //     i++
+        // }
+
+
+
+        // let sayi=+prompt("lütfen sayı giriniz ve çıkmak için 0 giriniz")
+        // let toplam=0
+        // while(sayi!=0)
+        // {
+        //     toplam+=sayi
+        //     sayi=+prompt("lütfen sayı giriniz ve çıkmak için 0 giriniz")
+        // }
+        // console.log(toplam)
+        // ikiside kullannılır
+            // for(;sayi!=0;)
+            // {
+            //     toplam+=sayi
+            //      sayi=+prompt("lütfen sayı giriniz ve çıkmak için 0 giriniz")
+            // }
+            // console.log(toplam)
+
+            // let sayi=+prompt("lütfen sayı giriniz ve çıkmak için 0 giriniz")
+            //     let sonuc=1
+            //     let i=1
+            //     while (i<=sayi)
+            //     {
+            //         sonuc*=i
+            //         i++
+            //     }
+            //     console.log(sonuc)
+
+
+
+
+            // fibonacci dizisini while ile yapınız
+
+
+                let ilk=0
+                let ikinci=1
+                let fn=0
+                let sayi=+prompt("lütfen bir sayı giriniz")
+                console.log(ikinci+" ")
+                let i=1;
+                while (i<sayi){
+                    i++
+            fn=ilk+ikinci
+            ilk=ikinci
+            ikinci=fn
+                }
+            document.write(fn+" ")
+
+
+
+    </script>
+
+    
+</body>
+</html>

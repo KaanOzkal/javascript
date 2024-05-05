@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        let listele=(a)=>{
+            for (let  i=0;i<a.length;i++){
+                console.log(a[i])
+            }
+        }
+        let isim="ahmet"
+        let isimler=["ahmet","muratcan","kaan","kenan","zümre","rümeysa","davut","Ahmet","Yasir"]
+        console.log(isimler)
+        // listele(isimler)
+
+        // isimler.push("Osman")
+        // console.log(isimler)
+        // isimler.pop()
+        // console.log(isimler)
+        // isimler.sort()
+        // console.log(isimler)
+        isimler.reverse()
+        // console.log(isimler)
+        // console.log(isimler.shift("123"))
+        // isimler.unshift("123")
+        // console.log(isimler)
+        // isimler.splice(1,"654")
+        // console.log(isimler)
+        let metin=isimler.join("-")
+        console.log(metin)
+        let newisimler=metin.split(",")
+        console.log(newisimler)
+        let newdizi=isimler.slice(4)
+        console.log(newdizi)
+        console.log(isimler.find(x=>x=="ahmet")) 
+        console.log(isimler.indexOf("ahmet")) 
+        console.log(isimler.includes("ahmet"))
+        console.log(isimler.includes("ahmet1")) 
+
+                    
+
+                    
+                    
+                    
+                    
+                    
+    </script>
+    
+</body>
+</html>

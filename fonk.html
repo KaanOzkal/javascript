@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <script>
+
+
+
+        let tarihigoster=(tarih)=>{
+            let gun="";
+            let ay="";
+            let yil="";
+            let count=0;
+            for (let i=0;i<tarih.length;i++)
+            {
+                if(tarih[i]=="."){
+                    count++;
+                    continue
+                }
+                if(count==0){
+                    gun+=tarih[i]
+                }
+               
+                else if(count==1)
+                {
+                    ay+=tarih[i]
+                }
+                else if(count==2)
+                {
+                    yil+=tarih[i]
+                }
+            }
+            let newAy
+            if (ay=="01" || ay =="1" )
+             {
+                newAy="ocak"
+             }
+             else if(ay="02" ||  ay=="2")
+             newAy="şubat"
+
+             else if(ay="03" ||  ay=="3")
+             newAy="mart"
+
+             else if(ay="04" ||  ay=="4")
+             newAy="nisan"
+
+             else if(ay="05" ||  ay=="5")
+             newAy="mayıs"
+
+             else if(ay="06" ||  ay=="6")
+             newAy="haziran"
+
+             else if(ay="07" ||  ay=="7")
+             newAy="temmuz"
+
+             else if(ay="08" ||  ay=="8")
+             newAy="ağustos"
+
+
+             else if(ay="09" ||  ay=="9")
+             newAy="eylül"
+
+
+             else if(ay="10")
+             newAy="ekim"
+
+             else if(ay="1")
+             newAy="kasım"
+
+
+             else if(ay="12")
+             newAy="aralık"
+
+             console.log(gun+" "+newAy+" "+yil)
+        }
+        tarihigoster("06.06.2023")
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
